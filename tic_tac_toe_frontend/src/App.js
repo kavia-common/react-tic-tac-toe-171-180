@@ -19,7 +19,7 @@ function App() {
 
   return (
     <div className="App">
-      <Navbar />
+      <Navbar title="Super tac" />
       <header className="App-header">
         <button 
           className="theme-toggle" 
