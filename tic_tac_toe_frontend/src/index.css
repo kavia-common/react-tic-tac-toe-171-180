@@ -7,6 +7,37 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* Center the main app container responsively */
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  /* Vertically center with flexbox for main content */
+  align-items: stretch;
+  justify-content: center;
+}
+
+/* Optional wrapper for vertical and horizontal centering if used in JSX */
+.main-wrapper {
+  width: 100%;
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2rem 2.5rem;
+  min-height: 100vh;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Make padding smaller for mobile */
+@media (max-width: 600px) {
+  .main-wrapper {
+    padding: 1rem 0.5rem;
+  }
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
